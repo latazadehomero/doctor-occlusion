@@ -1,0 +1,103 @@
+/* styles.css - Doctor's Occlusion (Intuitive Controls) */
+
+.doctor-occlusion-container {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: transparent; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.doctor-controls {
+    padding: 8px;
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--background-modifier-border);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.doctor-workspace {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    line-height: 0;
+    background-color: transparent; 
+    /* AHORA ES UNA MANITA POR DEFECTO */
+    cursor: grab;
+    resize: vertical; 
+    overflow: hidden;
+}
+
+.doctor-occlusion-canvas {
+    display: block;
+    width: 100%;
+    z-index: 5;
+}
+
+.doctor-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 15px;
+    text-align: center;
+    color: var(--text-muted);
+    background-color: var(--background-primary);
+    min-height: 300px;
+}
+
+.doctor-empty-icon { font-size: 3em; opacity: 0.5; }
+
+.doctor-btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--background-modifier-border);
+    background-color: var(--interactive-normal);
+    color: var(--text-normal);
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.doctor-btn:hover { background-color: var(--interactive-hover); }
+.doctor-btn.primary { background-color: var(--interactive-accent); color: var(--text-on-accent); border: none; }
+.doctor-btn.danger { background-color: var(--text-error); color: #ffffff; border: none; }
+
+/* MODO ZEN */
+.doctor-zen-modal {
+    width: 95vw !important;
+    height: 95vh !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.doctor-zen-modal .modal-content {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    background-color: #1e1e1e;
+}
+
+.doctor-zen-workspace {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* TAMBIÉN AQUÍ MANITA POR DEFECTO */
+    cursor: grab;
+}

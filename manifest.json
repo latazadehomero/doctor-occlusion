@@ -1,0 +1,10 @@
+{
+	"id": "doctor-occlusion",
+	"name": "Doctor's Occlusion",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Image occlusion plugin: Hide all, show one.",
+	"author": "latazadehomero",
+	"authorUrl": "https://github.com/latazadehomero",
+	"isDesktopOnly": false
+}
