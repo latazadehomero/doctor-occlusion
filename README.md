@@ -1,8 +1,6 @@
-# doctor-occlusion
-Image occlusion plugin: Hide all, show one.
 
 # 🩺 Doctor's Occlusion for Obsidian
-
+Image occlusion plugin: Hide all, show one.
 A **Native Image Occlusion** Study anatomy, histology, and diagrams directly inside your vault.
 
 ## ✨ Key Features
